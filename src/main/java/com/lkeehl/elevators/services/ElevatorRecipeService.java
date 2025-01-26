@@ -66,9 +66,9 @@ public class ElevatorRecipeService {
     }
 
     public static void discoverRecipesForPlayer(Player player) {
-        Elevators.getElevatorsLogger().warning("Trying to teach player recipes");
+//        Elevators.getElevatorsLogger().warning("Trying to teach player recipes");
         for(ElevatorRecipeGroup recipeGroup : ElevatorRecipeService.elevatorRecipeGroupMap.values()) {
-            Elevators.getElevatorsLogger().warning("Teaching player recipe");
+//            Elevators.getElevatorsLogger().warning("Teaching player recipe");
             player.discoverRecipes(recipeGroup.getNameSpacedKeys());
         }
     }
